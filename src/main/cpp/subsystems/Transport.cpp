@@ -41,7 +41,11 @@ void Transport::Periodic(){
     printf("%.2f\n", curSpeed);
   }
 
-  if(joyBut1 -> Get()){
+  /*if(joyBut1 -> Get()){
+    scgT -> Set(curSpeed);
+  }*/
+
+  if(joyT -> GetRawButton(1)){
     scgT -> Set(curSpeed);
   }
   else scgT -> Set(0);
